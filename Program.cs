@@ -1,5 +1,10 @@
 ﻿using System;
 
+Main();
+
+void Main()
+{
+
 Console.WriteLine("Welcome to the Enthusiastic Moose Simulator!");
 Console.WriteLine("--------------------------------------------");
 Console.WriteLine();
@@ -48,6 +53,7 @@ CanadaQuestion();
 EnthusiasticQuestion();
 LoveCSharpQuestion();
 SecretQuestion();
+MyQuestion();
 
 bool MooseAsks(string question)
 {
@@ -119,4 +125,18 @@ void SecretQuestion()
     {
         MooseSays("Oh, no...secrets are the best, I love to share them!");
     }
+}
+// This one is homemade
+void MyQuestion()
+{
+    bool wantsMy = MooseAsks("Do you like my code?");
+    if (wantsMy)
+    {
+        MooseSays("Thanks. I do too :)");
+    }
+    else
+    {
+        MooseSays("Please like my code!");
+    }
+}
 }
